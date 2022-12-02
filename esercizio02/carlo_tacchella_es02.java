@@ -89,7 +89,7 @@ public class carlo_tacchella_es02 {
         }
 
         for (int i : array) {
-            if(array[i]%0==0)
+            if(array[i]%2==0 && i%2==0)
                 System.out.println("L'array di posizione "+i+" è un numero pari.");
         }
 
@@ -97,10 +97,10 @@ public class carlo_tacchella_es02 {
     }
 
     public static void main(String[] args) {
-        // esA();
+        esA();
         esB();
-        // esC();
-        // esD();
+        esC();
+        esD();
     }
 
 }

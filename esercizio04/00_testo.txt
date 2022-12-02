@@ -1,0 +1,35 @@
+Write a program to print the area of a rectangle by creating a class 
+named 'Area' having two methods. First method named as 'setDim' takes 
+length and breadth of rectangle as parameters and the second method 
+named as 'getArea' returns the area of the rectangle. Length and 
+breadth of rectangle are entered through keyboard.
+
+Print the average of three numbers entered by user by creating a class 
+named 'Average' having a method to calculate and print the average.
+
+Write a program that would print the information (name, year of 
+joining, salary, address) of three employees by creating a class named 
+'Employee'. The output should be as follows:
+Name        Year of joining        Address
+Robert            1994                64C- WallsStreat
+Sam                2000                68D- WallsStreat
+John                1999                26B- WallsStreat
+ 
+
+
+Crea 
+un programma dotato di una classe 'potenza' che implementa la potenza 
+del 2 dei numeri (interi) associati agli oggetti istanziati della classe.
+La classe deve essere dotata di costruttore, di un metodo pow() che stampi 
+a video la potenza del numero associato all'oggetto, e di un metodo 
+cambiobase() che deve permettere di cambiare base alla potenza da 
+calcolare.
+
+Crea un programma per la gestione di un controcorrente gestito dalla 
+classe CC.
+Il programma deve essere in grado di effettuare versamenti, prelievi, di 
+restituire il saldo e di effettuare la lista degli ultimi 5 movimenti .
+
+
+
+

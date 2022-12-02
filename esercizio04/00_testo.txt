@@ -16,11 +16,10 @@ Name        Year of joining        Address
 Robert            1994                64C- WallsStreat
 Sam                2000                68D- WallsStreat
 John                1999                26B- WallsStreat
- 
 
 
-Crea 
-un programma dotato di una classe 'potenza' che implementa la potenza 
+
+Crea un programma dotato di una classe 'potenza' che implementa la potenza
 del 2 dei numeri (interi) associati agli oggetti istanziati della classe.
 La classe deve essere dotata di costruttore, di un metodo pow() che stampi 
 a video la potenza del numero associato all'oggetto, e di un metodo 
@@ -28,8 +27,7 @@ cambiobase() che deve permettere di cambiare base alla potenza da
 calcolare.
 
 Crea un programma per la gestione di un controcorrente gestito dalla 
-classe CC.
-Il programma deve essere in grado di effettuare versamenti, prelievi, di 
+classe CC. Il programma deve essere in grado di effettuare versamenti, prelievi, di
 restituire il saldo e di effettuare la lista degli ultimi 5 movimenti .
 
 

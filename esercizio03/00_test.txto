@@ -7,8 +7,8 @@ nell’array una volta soltanto. Ad esempio se l’array contiene  1, 2, 3, 1,
 2, 4  il programma stamperà  3, 4
 
 Creare un array di interi con 8 posizione e riempirlo con numeri casuali 
-compresi tra 1 e 90 senza ripetizioni. Stampare il contenuto man mano il 
+compresi tra 1 e 90 senza ripetizioni. Stampare man mano il
 contenuto dell’array.
 
-Eseguire un bubble sort su un array in input
+Eseguire un bubble sort su un array in input.
 

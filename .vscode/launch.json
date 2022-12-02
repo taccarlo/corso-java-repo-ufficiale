@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch rodley_orosa_es02",
+            "request": "launch",
+            "mainClass": "esercizio02.rodley_orosa_es02",
+            "projectName": "corso-java-repo-ufficiale_ff307095"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

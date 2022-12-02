@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch alessia_tezza_es01",
+            "request": "launch",
+            "mainClass": "alessia_tezza_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch andrea_rossi_es01",
+            "request": "launch",
+            "mainClass": "andrea_rossi_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch carlo_tacchella_es01",
+            "request": "launch",
+            "mainClass": "carlo_tacchella_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch edoardo_ridolfi_es01",
+            "request": "launch",
+            "mainClass": "edoardo_ridolfi_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch carlo_tacchella_es02",
+            "request": "launch",
+            "mainClass": "esercizio02.carlo_tacchella_es02",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch lorenzo_carta_es02",
+            "request": "launch",
+            "mainClass": "esercizio02.lorenzo_carta_es02",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch francesco_fiorio_es01",
+            "request": "launch",
+            "mainClass": "francesco_fiorio_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch lorenzo_carta_es01",
+            "request": "launch",
+            "mainClass": "lorenzo_carta_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch michael_petternella_es01",
+            "request": "launch",
+            "mainClass": "michael_petternella_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch nicolle_purgato_es01",
+            "request": "launch",
+            "mainClass": "nicolle_purgato_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch rodley_orosa_es01",
+            "request": "launch",
+            "mainClass": "rodley_orosa_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch scrinzi_daniele_es01",
+            "request": "launch",
+            "mainClass": "scrinzi_daniele_es01",
+            "projectName": "corso-java-repo-ufficiale_9bfa17b6"
+        }
+    ]
+}

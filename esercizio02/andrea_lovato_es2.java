@@ -1,12 +1,12 @@
 import java.lang.reflect.Array;
 import java.util.Scanner;
 
-public class lovato_andrea_es01 {
+public class andrea_lovato_es2 {
 
     /**
      * 
      */
-    public lovato_andrea_es01() {
+    public andrea_lovato_es2() {
 
         System.out.println("BELLA RAGAAAAAA 130");
         int n[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };

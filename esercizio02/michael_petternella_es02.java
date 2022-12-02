@@ -3,6 +3,9 @@ package esercizio02;
 public class michael_petternella_es02 {
     public static void main(String[] args) {
         int diecinumeri[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        for (int i : diecinumeri) {
+            System.out.println(i);
+        }
         ottoNumeri();
         maxNumber();
         numPari();

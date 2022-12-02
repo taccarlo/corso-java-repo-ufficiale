@@ -1,3 +1,5 @@
 .idea/
 corso-java-repo-ufficiale.iml
 out/
+.vscode/
+**/tempCodeRunnerFile.java

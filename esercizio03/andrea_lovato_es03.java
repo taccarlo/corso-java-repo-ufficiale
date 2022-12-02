@@ -8,7 +8,7 @@ public class andrea_lovato_es03 {
 
     public andrea_lovato_es03() {
 
-        int arr[] = { 1, 4, 3, 6, 7, 2, 8, 5, 9 };
+        int arr[] = { 1, 4, 6, 6, 3, 8, 8, 5, 9 };
 
         maggiore(arr);
         singolo();

@@ -1,0 +1,12 @@
+Memorizzare in un array di dieci posizioni i primi dieci numeri naturali.
+
+Dopo aver letto e memorizzato 8 numeri in un array, calcolare la somma di 
+quelli negativi e memorizzare zero al loro posto.
+
+Leggere un array di interi di 5 posizioni e dopo averlo letto cercare al 
+suo interno il massimo e scrivere il massimo e la posizione della cella in 
+cui è memorizzato.
+
+Leggere un array di interi di 10 posizioni e dire se in tutte le posizioni 
+pari dell’array è memorizzato un numero pari.
+

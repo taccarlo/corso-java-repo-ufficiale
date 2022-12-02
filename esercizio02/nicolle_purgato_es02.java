@@ -42,7 +42,7 @@ public class nicolle_purgato_es02 {
             
         }
     
-        public static void esericizio4(){
+        public static void esercizio4(){
             int array[] = new int[10];
             Scanner tastiera = new Scanner(System.in);
             for (int i = 0; i < 10; i++) {
@@ -52,5 +52,12 @@ public class nicolle_purgato_es02 {
                     System.out.println("Il numero " + array[i] + " in posizione " + i + " è pari e si trova in una posizione pari");
                 }
             }
+        }
+
+        public static void main(String[] args) {
+            esercizio1();
+            esercizio2();
+            esercizio3();
+            esercizio4();
         }
 }

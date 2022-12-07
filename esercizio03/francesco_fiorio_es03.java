@@ -1,11 +1,9 @@
-package esercizio03;
-
 import java.util.Scanner;
 
-public class franesco_fiorio_es03 {
+public class francesco_fiorio_es03 {
     public static void main(String[] args) {
         es02();
-        
+
     }
     public static void es01(){
         int array[] = new int[10];
@@ -30,12 +28,10 @@ public class franesco_fiorio_es03 {
             occurrence = 0;
         }
         System.out.println(array[maxIndex] + "si ripete " + max + " volte");
-        tastiera.close(); 
+        tastiera.close();
     }
 
     public static void es02() {
-            
-    }
 
-    
+    }
 }

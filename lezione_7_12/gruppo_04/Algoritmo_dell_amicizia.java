@@ -14,7 +14,7 @@ public class Algoritmo_dell_amicizia {
             System.out.println("Lascia un messaggio \n" +
                     " aspetta di essere richiamato");
         }
-        System.out.println("Ti va di mangiare qualcosa insieme?");
+        System.out.println("Ti va di mangiare qualcosa insieme??");
         boolean risposta = input.nextBoolean();
 
         if(risposta){
@@ -76,5 +76,10 @@ public class Algoritmo_dell_amicizia {
         if(n<=6)
             System.out.println("E facciamolo insieme dai");
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println(incipit());
+        attivvita();
     }
 }

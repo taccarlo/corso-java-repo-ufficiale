@@ -7,7 +7,8 @@ public class attivita_fiorio {
     Scanner input = new Scanner(System.in);
     // not used
     input.nextLine();
-    int n = 0;while(n<=6)
+    int n = 0;
+    while(n<=6)
     {
         System.out.println("è una cosa che va di fare anche a te?");
         boolean a = input.nextBoolean();
@@ -18,4 +19,4 @@ public class attivita_fiorio {
         }
         n++;
     }if(n<=6)System.out.println("E facciamolo insieme dai");
-}
+}}

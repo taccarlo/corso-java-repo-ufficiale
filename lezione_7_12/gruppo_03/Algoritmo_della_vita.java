@@ -9,10 +9,14 @@ public class Algoritmo_della_vita {
         int anno_superiori = 1;
         while(true){
             System.out.println("La persona è al " + anno_superiori + " delle superiori");
-            int roll_bocciatura = (int)Math.random() * 100;
-            if(roll_bocciatura <= 20){
+            int roll_bocciatura = (int)(Math.random() * 100);
+            System.out.println(roll_bocciatura);
+            if(roll_bocciatura <= 40){
                 n_bocciature++;
                 System.out.println("La persona è bocciata! Numero di bocciature: " + n_bocciature);
+            } else {
+                System.out.println("La persona ha superato il " + (anno_superiori + 1) + " anno!");
+                anno_superiori++;
             }
             if(n_bocciature >= 3){
                 System.out.println("La persona è stata bocciata troppi volte e non può proseguire gli studi!");

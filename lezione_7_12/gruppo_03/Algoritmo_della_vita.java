@@ -1,5 +1,7 @@
 package lezione_7_12.gruppo_03;
 
+import java.util.Scanner;
+
 public class Algoritmo_della_vita {
 
     public static void funzione01(){
@@ -35,11 +37,20 @@ public class Algoritmo_della_vita {
 
     }
 
-    public static void funzione03(){
-
+    public static boolean funzione03(){
+      Scanner input = new Scanner(System.in);
+      System.out.println("Quante promozioni?");
+      int promozioni = input.nextInt();
+      if(promozioni > 3) {
+        System.out.println("BRAVOOOO sei diventato capo di azienda");
+      } else {
+        return false;
+      }
+      input.close();
     }
 
     public static void main(String args[]){
         funzione01();
+        funzione03();
     }
 }

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Algoritmo_dell_amicizia {
     public boolean incipit() {
-
         System.out.println("Componi il numero della persona");
         Scanner input = new Scanner(System.in);
         String numero = input.nextLine();
@@ -22,7 +21,6 @@ public class Algoritmo_dell_amicizia {
         }
 
         return risposta;
-
     }
 
     public void finale() {
@@ -75,6 +73,5 @@ public class Algoritmo_dell_amicizia {
         }
         if(n<=6)
             System.out.println("E facciamolo insieme dai");
-
     }
 }

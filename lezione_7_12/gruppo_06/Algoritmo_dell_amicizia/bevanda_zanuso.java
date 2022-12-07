@@ -1,4 +1,4 @@
-package lezione_7_12.gruppo_06;
+package lezione_7_12.gruppo_06.Algoritmo_dell_amicizia;
 
 import java.util.Scanner;
 

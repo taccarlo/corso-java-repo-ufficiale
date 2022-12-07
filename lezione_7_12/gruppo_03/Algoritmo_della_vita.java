@@ -29,8 +29,8 @@ public class Algoritmo_della_vita {
                 System.out.println("Il bro ha superato gli studi superiori!");
                 break;
             }
-            funzione02();
         }
+        funzione02();
     }
 
     public static void funzione02() {

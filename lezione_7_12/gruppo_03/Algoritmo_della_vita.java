@@ -57,18 +57,22 @@ public class Algoritmo_della_vita {
             System.out.println("Il bro è stato infortunato, non può più lavorare");
             return;
         } else {
-            int roll_promozione = (int) (Math.random() * 100);
+            int roll_promozione;
             int n_promozioni = 0;
             int n = 0;
             while (n <= 20) {
+                roll_promozione = (int) (Math.random() * 100);
                 if (roll_promozione <= 20) {
                     n_promozioni++;
                     System.out.println("Il bro è stato promosso!");
+                    if(n_promozioni == 3){
+                        break;
+                    }
                 }
                 n++;
             }
-            if (n_promozioni > 3) {
-                System.out.println("BRAVOOOO sei diventato capo di azienda");
+            if (n_promozioni == 3) {
+                System.out.println("Il bro è diventato capo di azienda! Congratulazioni bro! ");
             } else {
                 System.out.println("Il bro è andato in pensione!");
             }

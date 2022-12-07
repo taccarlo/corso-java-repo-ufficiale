@@ -2,7 +2,12 @@ package lezione_7_12.gruppo_06;
 
 import java.util.Scanner;
 
+
 public class bevanda_zanuso {
+    public void main(String[] args) {
+        bevanda();
+    }
+
     public boolean bevanda() {
         Scanner input = new Scanner(System.in);
         System.out.println("E di bere qualcosa di caldo?");

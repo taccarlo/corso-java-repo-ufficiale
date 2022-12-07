@@ -3,7 +3,7 @@ package lezione_7_12.gruppo_04;
 import java.util.Scanner;
 
 public class Algoritmo_dell_amicizia {
-    public boolean incipit() {
+    public static boolean incipit() {
 
         System.out.println("Componi il numero della persona");
         Scanner input = new Scanner(System.in);

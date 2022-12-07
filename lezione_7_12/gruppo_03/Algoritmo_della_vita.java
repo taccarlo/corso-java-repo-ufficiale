@@ -61,7 +61,7 @@ public class Algoritmo_della_vita {
             int roll_promozione = (int) (Math.random() * 100);
             int n_promozioni = 0;
             int n = 0;
-            while (n >= 20) {
+            while (n <= 20) {
                 if (roll_promozione <= 20) {
                     n_promozioni++;
                     System.out.println("Il bro è stato promosso!");

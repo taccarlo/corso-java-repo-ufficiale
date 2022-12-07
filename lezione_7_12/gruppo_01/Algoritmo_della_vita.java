@@ -21,14 +21,16 @@ public class Algoritmo_della_vita {
         int n_bocciature = 0;
         int anno_superiori = 1;
 
-        while (anno_superiori != 6 || n_bocciature > 3) {
+        while (anno_superiori < 6 && n_bocciature < 3) {
             System.out.println("Seguo il " + anno_superiori + "' anno delle superiori");
             System.out.print("Sei stato bocciato? 0: NO - 1: SI ");
             int risposta = input.nextInt();
             if (risposta == 0) {
                 anno_superiori += 1;
-            } else {
+            } else if (risposta == 1) {
                 n_bocciature += 1;
+            } else {
+                System.out.println("Inserire 0 oppure 1");
             }
         }
 

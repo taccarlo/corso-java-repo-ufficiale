@@ -25,12 +25,12 @@ public class Algoritmo_dell_amicizia {
 
     }
 
-    public void finale() {
+    public static void finale() {
         System.out.println("Siete diventati amici :)\n" +
                 "Ora hai una persona in più a cui rompere le palle in caso di bisogno, e viceversa");
     }
 
-    public boolean bevanda() {
+    public static boolean bevanda() {
         Scanner input = new Scanner(System.in);
         System.out.println("E di bere qualcosa di caldo?");
         boolean risposta = input.nextBoolean();
@@ -57,7 +57,7 @@ public class Algoritmo_dell_amicizia {
         return false;
     }
 
-    public void attivita() {
+    public static void attivita() {
         System.out.println("cos' altro ti va di fare?");
         Scanner input = new Scanner(System.in);
         //not used
@@ -80,6 +80,6 @@ public class Algoritmo_dell_amicizia {
 
     public static void main(String[] args) {
         System.out.println(incipit());
-        attivvita();
+        attivita();
     }
 }

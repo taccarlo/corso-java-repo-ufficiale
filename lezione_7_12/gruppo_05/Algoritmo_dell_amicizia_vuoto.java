@@ -1,8 +1,8 @@
-package lezione_7_12.gruppo_05;
+package esercitazione;
 
 import java.util.Scanner;
 
-public class classe {
+public class Algoritmo_dell_amicizia {
     public boolean incipit() {
 
         return true;
@@ -15,11 +15,12 @@ public class classe {
     }
 
     public boolean bevanda() {
-
+    
         return true;
     }
 
     public void attivita() {
+        
 
     }
 }

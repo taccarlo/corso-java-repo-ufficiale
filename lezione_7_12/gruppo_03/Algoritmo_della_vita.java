@@ -1,6 +1,5 @@
 package lezione_7_12.gruppo_03;
 
-import org.omg.CORBA.SystemException;
 
 public class Algoritmo_della_vita {
 

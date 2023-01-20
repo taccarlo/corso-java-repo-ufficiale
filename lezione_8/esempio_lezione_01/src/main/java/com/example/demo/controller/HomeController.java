@@ -28,4 +28,10 @@ public class HomeController {
 	public String secondoEsempioView() {
 		return "second";
 	}
+
+	@RequestMapping("/lorenzo")
+	public String lorenzoView() {
+		return "lorenzo";
+	}
+
 }

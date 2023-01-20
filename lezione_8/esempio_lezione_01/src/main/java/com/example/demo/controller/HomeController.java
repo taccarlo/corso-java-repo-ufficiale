@@ -12,18 +12,18 @@ public class HomeController {
 	public String index() {
 		return "Benvenuti al corso Java Springboot!";
 	}
-	
+
 	@RequestMapping("/demo")
 	@ResponseBody
 	public String demo() {
 		return "Demo!";
 	}
-	
+
 	@RequestMapping("/esempio")
 	public String esempioView() {
 		return "index";
 	}
-	
+
 	@RequestMapping("/secondoesempio")
 	public String secondoEsempioView() {
 		return "second";
@@ -33,5 +33,11 @@ public class HomeController {
 	public String lorenzoView() {
 		return "lorenzo";
 	}
+
+
+    @RequestMapping("/edoardo")
+    public String edoardoView() {
+        return "edoardo";
+    }
 
 }

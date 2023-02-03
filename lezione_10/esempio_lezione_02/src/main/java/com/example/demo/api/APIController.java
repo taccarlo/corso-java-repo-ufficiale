@@ -1,9 +1,9 @@
 package com.example.demo.api;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,16 +11,20 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.example.demo.model.Todo;
+import com.example.demo.service.DBItemService;
+import com.example.demo.service.ITodoService;
 import com.example.demo.service.ItemService;
 
 @RestController
 public class APIController {
 
-	private ItemService itemService;
+	@Autowired
+	@Qualifier("mainTodoService")
+	private ITodoService itemService;
 
 	
 	public APIController() {
-		itemService = new ItemService();
+		itemService = new DBItemService();
 	}
 	
 	@RequestMapping("/api/todolist")

@@ -11,25 +11,26 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.example.demo.model.Todo;
+import com.example.demo.service.ItemService;
 
 @RestController
 public class APIController {
 
-	List<Todo> list;
+	private ItemService itemService;
 
 	
 	public APIController() {
-		list = new ArrayList<Todo>();
+		itemService = new ItemService();
 	}
 	
 	@RequestMapping("/api/todolist")
 	public Iterable<Todo> getAllTodo(){
-		return list;
+		return itemService.getAllTodo();
 	}
 	
 	@RequestMapping("api/todolist/{id}")
 	public Todo getById(@PathVariable int id) {
-		Optional <Todo> item = list.stream().filter(a->a.getId()==id).findFirst();
+		Optional <Todo> item = itemService.getById(id);
 		if(item.isEmpty()) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "item not found");
 		}

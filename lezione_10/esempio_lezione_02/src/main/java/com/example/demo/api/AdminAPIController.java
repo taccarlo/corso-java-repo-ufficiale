@@ -13,32 +13,25 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.example.demo.model.Todo;
+import com.example.demo.service.ItemService;
 
 @RestController
 public class AdminAPIController {
 
-	List<Todo> list;
-	private int lastId;
+	private ItemService itemService;
 	
 	public AdminAPIController() {
-		list = new ArrayList<Todo>();
-		Todo todo = new Todo(1, "andare alla riunione","11:15 al piano di sopra");
-		Todo todo2 = new Todo(2, "mettere slide su google drive","dopo");
-		Todo todo3 = new Todo(3, "mettere su github app","dopo");
-		list.add(todo);
-		list.add(todo2);
-		list.add(todo3);
-		lastId=3;
+		itemService = new ItemService();
 	}
 	
 	@RequestMapping("/admin/api/todolist")
 	public Iterable<Todo> getAllTodo(){
-		return list;
+		return itemService.getAllTodo();
 	}
 	
 	@RequestMapping("/admin/api/todolist/{id}")
 	public Todo getById(@PathVariable int id) {
-		Optional <Todo> item = list.stream().filter(a->a.getId()==id).findFirst();
+		Optional <Todo> item = itemService.getById(id);
 		if(item.isEmpty()) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "item not found");
 		}
@@ -46,19 +39,29 @@ public class AdminAPIController {
 	}
 	
 	@RequestMapping(value = "/admin/api/todolist", method = RequestMethod.POST)
-	public Todo create(@RequestBody Todo todo) {
-		lastId++;
-		todo.setId(lastId);
-		list.add(todo);
-		return todo;
+	public Todo update(@RequestBody Todo todo) {
+		return itemService.create(todo);
 	}
+	
+	@RequestMapping(value = "/admin/api/todolist/{id}", method = RequestMethod.PUT)
+	public Todo update(@PathVariable int id, @RequestBody Todo todo) {
+
+		Optional<Todo> foundTodo = itemService.update(id, todo);
+		if(foundTodo.isEmpty()) {
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "item not found");
+		}
+		foundTodo.get().setTitle(todo.getTitle());
+		foundTodo.get().setSubtitle(todo.getSubtitle());
+		return foundTodo.get();
+	}
+	
 	
 	@RequestMapping(value = "/admin/api/todolist/{id}", method = RequestMethod.DELETE)
 	public void delete(@PathVariable int id) {
-		Optional<Todo> item = list.stream().filter(a->a.getId() == id).findFirst();
-		if(item.isEmpty()) {
+		Boolean isDeleted = itemService.delete(id);
+		if(isDeleted == false) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "item not found");
 		}
-		list.remove(item.get());
 	}
+	
 }
